@@ -8,7 +8,11 @@ public class Example {
      *
      * 希尔   nlog2n  n^2     n           1       不稳定
      * 归并   nlog2n  nlog2n  nlog2n      n       稳定
+     * 快速   nlog2n  n^2     nlog2n      nlog2n  不稳定
+     *
+     * 堆    nlog2n  nlog2n  nlog2n      1       不稳定
      * **/
+    /**快排是最佳选择，稳定性很重要且不缺空间优先归并**/
     public static void sort(Comparable[] a){}
 
     private static boolean less(Comparable v,Comparable w){return v.compareTo(w)<0;}
